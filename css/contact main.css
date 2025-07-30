@@ -1,0 +1,60 @@
+.contact-main {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-main :where(.heading1) {
+  color: var(--red);
+}
+
+.contact-main :where(.map) {
+  border: none;
+  aspect-ratio: 16/9;
+  width: 500px;
+
+  box-shadow: rgba(142, 142, 142, 0.4) 0px 10px 20px -10px;
+}
+
+.contact-main :where(.container) {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contact-main :where(.container) .sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3rem;
+}
+
+.contact-main :where(.container) .details > li {
+  color: grey;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-main :where(.container) .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main :where(.container) .social-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.contact-main :where(.container) .social-links a {
+}
+
+.contact-main :where(.container) .social-links img {
+  aspect-ratio: 1/1;
+  width: 20px;
+  object-fit: contain;
+}

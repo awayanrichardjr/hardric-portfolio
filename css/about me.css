@@ -12,6 +12,8 @@
 .about-me :where(h1) {
   color: var(--red);
 }
+
+/* details */
 .about-me :where(.details) {
   display: flex;
   align-items: center;

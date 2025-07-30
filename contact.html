@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/contact main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <script src="js/script.js"></script>
 
@@ -50,6 +52,7 @@
       </ul>
     </nav>
 
+    <!-- contact header -->
     <header class="contact">
       <h1 class="heading1 baumans-regular text-gradient">
         <label for="">C</label>
@@ -61,5 +64,93 @@
         <label for="">T</label>
       </h1>
     </header>
+
+    <!-- contact main -->
+    <main class="contact-main">
+      <h1 class="heading1">Get in Touch!</h1>
+      <div class="container">
+        <div class="sub-container">
+          <ul class="details">
+            <li>
+              <span class="material-symbols-rounded">location_on</span>
+              <label for=""> Davao City, Del Sur, 8000, Philippines </label>
+            </li>
+            <li>
+              <span class="material-symbols-rounded">mail</span>
+              <label for=""> awayanrichardjr@gmail.com </label>
+            </li>
+            <li>
+              <span class="material-symbols-rounded">call</span>
+              <label for=""> 0906-587-6602 </label>
+            </li>
+          </ul>
+          <!-- social links -->
+          <ul class="social-links">
+            <script>
+              let fb = "https://www.facebook.com/awayanrichardjr",
+                github = "https://github.com/awayanrichardjr",
+                ig = "https://www.instagram.com/awayanrichardjr/",
+                x = "https://x.com/awayanrichardjr",
+                linkedin =
+                  "https://www.linkedin.com/in/richard-dumael-awayan-jr-b256502b8/";
+            </script>
+            <li>
+              <a
+                href="#"
+                onclick="window.open(fb, 'PopupWindow'); return false;"
+              >
+                <img src="files/svg/facebook.svg" alt="social-links" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="window.open(github, 'PopupWindow'); return false;"
+              >
+                <img src="files/svg/github copy.svg" alt="social-links" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="window.open(ig, 'PopupWindow'); return false;"
+              >
+                <img src="files/svg/instagram.svg" alt="social-links" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="window.open(x, 'PopupWindow'); return false;"
+              >
+                <img src="files/svg/twitter.svg" alt="social-links" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                onclick="window.open(linkedin, 'PopupWindow'); return false;"
+              >
+                <img src="files/svg/linkedin.svg" alt="social-links" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15837.803104673363!2d125.60075473955092!3d7.073620431377874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d9e40da7c65%3A0xe94c55fbd7b32544!2sPoblacion%20District%2C%20Davao%20City%2C%208000%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1753882200764!5m2!1sen!2sph"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+      </div>
+    </main>
   </body>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p class="copyright">&copy Copyright by Hardric. All right reserved.</p>
+  </footer>
 </html>
