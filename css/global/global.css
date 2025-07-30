@@ -14,8 +14,8 @@ html {
 body {
   background: linear-gradient(
     45deg,
-    rgba(255, 0, 140, 0.02),
-    rgba(0, 140, 255, 0.02)
+    rgba(255, 0, 140, 0.03),
+    rgba(0, 140, 255, 0.03)
   );
   background-repeat: no-repeat;
   background-position: center;
