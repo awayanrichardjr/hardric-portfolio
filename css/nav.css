@@ -1,0 +1,52 @@
+.navigation {
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  animation: navigation 1s ease 0s 1 normal none;
+}
+
+@keyframes navigation {
+  from {
+    transform: translateY(-10px);
+    opacity: 0%;
+  }
+}
+.navigation :where(.nav-brand) {
+  display: flex;
+  align-items: center;
+}
+
+.navigation :where(.nav-links) {
+  display: flex;
+  align-items: center;
+}
+
+.navigation :where(.nav-brand) a {
+  display: flex;
+  padding: 1rem 2rem;
+  color: grey;
+}
+
+.navigation :where(.nav-brand) a:hover {
+  color: var(--red);
+}
+
+.navigation :where(.nav-links) a {
+  display: flex;
+  padding: 1rem 2rem;
+  color: grey;
+  transition: 0.2s ease-in-out;
+}
+
+.navigation :where(.nav-links) a:hover {
+  color: var(--red);
+  transform: translateY(-2px);
+}
