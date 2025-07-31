@@ -24,6 +24,7 @@
   }
 }
 
+/* header links */
 .header :where(.header-links) {
   display: flex;
   align-items: center;
@@ -32,37 +33,35 @@
 
   animation: header-links 2s ease 0s 1 normal none;
 }
-
 @keyframes header-links {
   from {
     transform: translateY(10px);
     opacity: 0%;
   }
 }
-.header :where(.header-links) li:nth-child(1) a {
+.header :where(.header-links) a {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+
   padding: 1rem 2rem;
-  background-color: var(--red);
-  color: white;
   border-radius: 2rem;
   transition: 0.2s ease-in-out;
 }
-
+.header :where(.header-links) li:nth-child(1) a {
+  background-color: var(--red);
+  color: white;
+}
 .header :where(.header-links) li:nth-child(1) a:hover {
   background-color: black;
   color: white;
 }
-
 .header :where(.header-links) li:nth-child(2) a {
-  display: flex;
-  padding: 1rem 2rem;
   background-color: transparent;
   color: var(--red);
-  border-radius: 2rem;
   border: 1px solid var(--red);
-  transition: 0.2s ease-in-out;
 }
-
 .header :where(.header-links) li:nth-child(2) a:hover {
   background-color: var(--red);
   color: white;

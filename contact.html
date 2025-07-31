@@ -66,9 +66,20 @@
         <label for="">T</label>
       </h1>
 
-      <!-- get in touch btn  -->
+      <!-- contact links -->
       <ul class="contact-links">
-        <li><a href="#contact-main">Get In Touch!</a></li>
+        <li>
+          <a href="#contact-main">
+            <span class="material-symbols-rounded">contact_page</span>
+            Get In Touch!
+          </a>
+        </li>
+        <li>
+          <a href="#contact-form">
+            <span class="material-symbols-rounded">mail</span>
+            Message me
+          </a>
+        </li>
       </ul>
     </header>
 
@@ -80,15 +91,15 @@
           <ul class="details">
             <li>
               <span class="material-symbols-rounded">location_on</span>
-              <label for=""> Davao City, Del Sur, 8000, Philippines </label>
+              <label for="">Davao City, Del Sur, 8000, Philippines </label>
             </li>
             <li>
               <span class="material-symbols-rounded">mail</span>
-              <label for=""> awayanrichardjr@gmail.com </label>
+              <label for="">awayanrichardjr@gmail.com </label>
             </li>
             <li>
               <span class="material-symbols-rounded">call</span>
-              <label for=""> 0906-587-6602 </label>
+              <label for="">0906-587-6602 </label>
             </li>
           </ul>
           <!-- social links -->
@@ -154,29 +165,44 @@
         ></iframe>
       </div>
 
-      <!-- OR -->
-      <p class="or">Or</p>
+      <!-- Or Message me! -->
+      <a href="#contact-form" class="go-to-contact-form"> Or... Message me! </a>
     </main>
 
     <!-- contact form -->
-    <section class="contact-form">
+    <section class="contact-form" id="contact-form">
       <form action="">
         <h1 class="heading1">Message me here!</h1>
         <div class="input">
-          <label for="msg">Send a message</label>
+          <label for="e-mail">Enter your E-mail</label>
           <input
-            type="text"
-            name="msg"
-            id="msg"
-            placeholder="Send a message here..."
+            type="email"
+            name="e-mail"
+            id="e-mail"
+            placeholder="example@email.com"
           />
         </div>
         <div class="input">
-          <label for="e-mail">E-mail</label>
-          <input type="email" name="e-mail id="e-mail"
-          placeholder="example@email.com">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter a subject."
+          />
+        </div>
+        <div class="input">
+          <label for="msg">Message</label>
+          <textarea
+            name="msg"
+            id="smg"
+            placeholder="Send a message."
+          ></textarea>
         </div>
         <input type="submit" name="submit" id="submit" value="Submit" />
+
+        <!-- back to get in touch -->
+        <a href="#contact-main" class="back-to-get-in-touch">Get In Touch!</a>
       </form>
 
       <!-- <div class="container"></div> -->

@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .contact-main :where(.container) .details > li {
@@ -69,51 +69,14 @@
   object-fit: contain;
 }
 
-/* OR */
-.contact-main :where(.or) {
+/* Or Message me! */
+.contact-main :where(.go-to-contact-form) {
   color: var(--red);
-  animation: or 2s ease 0s infinite normal none;
-}
-
-@keyframes or {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-/* contact form */
-.contact-main :where(.contact-form) {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.contact-main :where(.contact-form) .heading1 {
-  color: var(--red);
-}
-.contact-main :where(.contact-form) .input {
-  display: flex;
-  flex-direction: column;
-}
-.contact-main :where(.contact-form) .input > label {
-  color: grey;
   font-size: 12px;
-}
-.contact-main :where(.contact-form) .input > input {
-  border: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+  text-align: center;
 }
 
-.contact-main :where(.contact-form) #submit {
-  border: none;
-  padding: 1rem;
-  background-color: var(--red);
-  color: white;
-  border-radius: 0.5rem;
+.contact-main :where(.go-to-contact-form:hover) {
+  color: black;
 }

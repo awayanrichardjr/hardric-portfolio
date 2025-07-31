@@ -19,29 +19,57 @@
 
 @keyframes heading1 {
   from {
-    transform: translateY(50px);
+    transform: translateY(30px);
     opacity: 0%;
   }
 }
 
-/* get in touch btn */
+/* contact links */
+.contact :where(.contact-links) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 .contact :where(.contact-links) a {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+
   padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: 0.2s ease-in-out;
+}
+.contact :where(.contact-links) li:nth-child(1) a {
+  background-color: var(--red);
+  color: white;
+  animation: btn1 2s ease 0s 1 normal none;
+}
+.contact :where(.contact-links) li:nth-child(1) a:hover {
+  background-color: black;
+  color: white;
+}
+.contact :where(.contact-links) li:nth-child(2) a {
   background-color: transparent;
   color: var(--red);
-  border-radius: 2rem;
   border: 1px solid var(--red);
-  transition: 0.2s ease-in-out;
-
-  animation: btn 2s ease 0s 1 normal none;
+  animation: btn2 2s ease 0s 1 normal none;
 }
-.contact :where(.contact-links) a:hover {
+.contact :where(.contact-links) li:nth-child(2) a:hover {
   background-color: var(--red);
   color: white;
 }
-
-@keyframes btn {
+@keyframes btn1 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes btn2 {
   from {
     transform: translateX(50px);
     opacity: 0%;
