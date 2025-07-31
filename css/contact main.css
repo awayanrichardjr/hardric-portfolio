@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .contact-main :where(.heading1) {
@@ -45,16 +45,75 @@
   flex-direction: column;
 }
 
+/* socail links */
 .contact-main :where(.container) .social-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 .contact-main :where(.container) .social-links a {
-}
+  padding: 1rem;
+  border-radius: 2rem;
 
+  display: grid;
+  place-content: center;
+  transition: 0.2s ease-in-out;
+}
+.contact-main :where(.container) .social-links a:hover {
+  transform: translateY(-2px);
+  background-color: white;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+}
 .contact-main :where(.container) .social-links img {
   aspect-ratio: 1/1;
   width: 20px;
   object-fit: contain;
+}
+
+/* OR */
+.contact-main :where(.or) {
+  color: var(--red);
+  animation: or 2s ease 0s infinite normal none;
+}
+
+@keyframes or {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* contact form */
+.contact-main :where(.contact-form) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-main :where(.contact-form) .heading1 {
+  color: var(--red);
+}
+.contact-main :where(.contact-form) .input {
+  display: flex;
+  flex-direction: column;
+}
+.contact-main :where(.contact-form) .input > label {
+  color: grey;
+  font-size: 12px;
+}
+.contact-main :where(.contact-form) .input > input {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-main :where(.contact-form) #submit {
+  border: none;
+  padding: 1rem;
+  background-color: var(--red);
+  color: white;
+  border-radius: 0.5rem;
 }

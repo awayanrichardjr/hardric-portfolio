@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/contact main.css" />
+    <link rel="stylesheet" href="css/contact form.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
     <script src="js/script.js"></script>
@@ -48,12 +49,13 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="expertise.html">Expertise</a></li>
         <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <!-- contact header -->
-    <header class="contact">
+    <header class="contact" id="contact">
+      <p>Lorem ipsum dolor sit amet.</p>
       <h1 class="heading1 baumans-regular text-gradient">
         <label for="">C</label>
         <label for="">O</label>
@@ -63,10 +65,15 @@
         <label for="">C</label>
         <label for="">T</label>
       </h1>
+
+      <!-- get in touch btn  -->
+      <ul class="contact-links">
+        <li><a href="#contact-main">Get In Touch!</a></li>
+      </ul>
     </header>
 
     <!-- contact main -->
-    <main class="contact-main">
+    <main class="contact-main" id="contact-main">
       <h1 class="heading1">Get in Touch!</h1>
       <div class="container">
         <div class="sub-container">
@@ -146,7 +153,34 @@
           class="map"
         ></iframe>
       </div>
+
+      <!-- OR -->
+      <p class="or">Or</p>
     </main>
+
+    <!-- contact form -->
+    <section class="contact-form">
+      <form action="">
+        <h1 class="heading1">Message me here!</h1>
+        <div class="input">
+          <label for="msg">Send a message</label>
+          <input
+            type="text"
+            name="msg"
+            id="msg"
+            placeholder="Send a message here..."
+          />
+        </div>
+        <div class="input">
+          <label for="e-mail">E-mail</label>
+          <input type="email" name="e-mail id="e-mail"
+          placeholder="example@email.com">
+        </div>
+        <input type="submit" name="submit" id="submit" value="Submit" />
+      </form>
+
+      <!-- <div class="container"></div> -->
+    </section>
   </body>
 
   <!-- footer -->
