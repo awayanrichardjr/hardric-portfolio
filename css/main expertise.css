@@ -1,4 +1,5 @@
 .main-expertise {
   height: 100vh;
+  scroll-snap-align: start;
   /* background-color: red; */
 }
